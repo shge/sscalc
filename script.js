@@ -48,6 +48,24 @@ $('input').on('input', function() {
       $('#score').val( Math.round( sd * (ss-50) + avg * 10 ) / 10 );
     break;
   }
+  if ($('#sd').prop('disabled') && score!=="" && avg!=="" && ss!=="" ) {
+    if (score === avg) {
+      $('.message').addClass('hidden');
+      $('#err-same').removeClass('hidden');
+    } else if (score < avg && ss > 50) {
+      $('.message').addClass('hidden');
+      $('#err-large').removeClass('hidden');
+    } else if (score > avg && ss < 50) {
+      $('.message').addClass('hidden');
+      $('#err-small').removeClass('hidden');
+    } else {
+      $('.message').addClass('hidden');
+      $('#msg-default').removeClass('hidden');
+    }
+  } else {
+    $('.message').addClass('hidden');
+    $('#msg-default').removeClass('hidden');
+  }
 });
 
 // clear

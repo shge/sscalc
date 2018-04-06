@@ -19,7 +19,6 @@
 <link rel="stylesheet" href="style.css?201804062021">
 <script src="script.js?201804062021"></script>
 
-
 <nav class="navbar is-link is-fixed-top">
   <div class="container">
     <div class="navbar-brand">
@@ -32,6 +31,18 @@
 <section class="section">
   <div class="container">
 
+    <article id="msg-default" class="message">
+      <div class="message-body">求めたいものを選択し、3つの空欄に値を入力すると計算できます。</div>
+    </article>
+    <article id="err-same" class="message is-danger hidden">
+      <div class="message-body">点数と平均点が等しいため計算できません。</div>
+    </article>
+    <article id="err-large" class="message is-danger hidden">
+      <div class="message-body">点数が平均点よりも低いにもかかわらず偏差値が50を上回っています。</div>
+    </article>
+    <article id="err-small" class="message is-danger hidden">
+      <div class="message-body">点数が平均点よりも高いにもかかわらず偏差値が50を下回っています。</div>
+    </article>
 
     <div class="columns">
       <div class="buttons has-addons">
@@ -40,11 +51,11 @@
         <span class="button is-large">平均点</span>
         <span class="button is-large">点数</span>
       </div>
-      <button id="clear" class="button is-large" style="margin-left:30px;">クリア</button>
+      <button id="clear" class="button is-large is-hidden-mobile" style="margin-left:30px;">クリア</button>
     </div>
 
     <div class="field">
-      <label class="label is-large">点数</label>
+      <label class="label is-large is-small-mobile">点数</label>
       <div class="control"><input id="score" class="input is-large" type="number"></div>
     </div>
     <div class="field">
@@ -62,3 +73,7 @@
 
   </div>
 </section>
+
+<footer class="footer">
+  <a href="https://github.com/shge/sscalc/issues/new">バグの報告などはこちらから</a>
+</footer>
