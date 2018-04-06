@@ -16,8 +16,8 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<link rel="stylesheet" href="style.css?201804062021">
+<script src="script.js?201804062021"></script>
 
 
 <nav class="navbar is-link is-fixed-top">
@@ -25,17 +25,7 @@
     <div class="navbar-brand">
         <h1 class="navbar-item is-large title">SSCalc</h1>
     </div>
-    <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/"> Home </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="/documentation/overview/start/"> Docs </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/"> Modifiers </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
-        </div>
-      </div>
-    </div>
+    <div id="nav" class="navbar-start"> <!-- Header --> </div>
 </nav>
 
 
@@ -67,7 +57,7 @@
     </div>
     <div class="field">
       <label class="label is-large">標準偏差</label>
-      <div class="control"><input id="sd" class="input is-large" type="number"></div>
+      <div class="control"><input id="sd" class="input is-large" type="number" disabled></div>
     </div>
 
   </div>
