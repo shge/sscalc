@@ -29,10 +29,10 @@ $('span.button').on('click', function(){
 
 // Calc
 $('input').on('input', function() {
-  var ss    = $('#ss').val(),
-      sd    = $('#sd').val(),
-      avg   = $('#avg').val(),
-      score = $('#score').val();
+  var ss    = Number( $('#ss').val() ),
+      sd    = Number( $('#sd').val() ),
+      avg   = Number( $('#avg').val() ),
+      score = Number( $('#score').val() );
 
   switch ($('span.is-link').text()) {
     case '標準偏差':
@@ -48,7 +48,7 @@ $('input').on('input', function() {
       $('#score').val( Math.round( sd * (ss-50) + avg * 10 ) / 10 );
     break;
   }
-  if ($('#sd').prop('disabled') && score!=="" && avg!=="" && ss!=="" ) {
+  if ($('#sd').prop('disabled') && score!==0 && avg!==0 && ss!==0 ) {
     if (score === avg) {
       $('.message').addClass('hidden');
       $('#err-same').removeClass('hidden');
