@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="http://i.imgur.com/mnhETpN.png">
 <title>SSCalc</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 
+<section class="navbar is-info">
+  <div class="container">
+    <div class="navbar-brand">
+        <h1 class="navbar-item is-large title">SSCalc</h1>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
-    <h1 class="title">SSCalc</h1>
+
+
+    <div class="columns">
+      <div class="buttons has-addons">
+        <span class="button is-large is-info">標準偏差</span>
+        <span class="button is-large">偏差値</span>
+        <span class="button is-large">平均点</span>
+        <span class="button is-large">点数</span>
+      </div>
+      <button id="clear" class="button is-large" style="margin-left:30px;">クリア</button>
+    </div>
+
+    <div class="field">
+      <label class="label is-large">点数</label>
+      <div class="control"><input id="score" class="input is-large" type="number"></div>
+    </div>
+    <div class="field">
+      <label class="label is-large">平均点</label>
+      <div class="control"><input id="avg" class="input is-large" type="number"></div>
+    </div>
+    <div class="field">
+      <label class="label is-large">偏差値</label>
+      <div class="control"><input id="ss" class="input is-large" type="number"></div>
+    </div>
+    <div class="field">
+      <label class="label is-large">標準偏差</label>
+      <div class="control"><input id="sd" class="input is-large" type="number"></div>
+    </div>
+
   </div>
 </section>
