@@ -2,13 +2,13 @@ $(function() {
 
 // Button
 $('span.button').on('click', function(){
-    $('span.button').removeClass('is-info');
-    $(this).addClass('is-info');
+    $('span.button').removeClass('is-link');
+    $(this).addClass('is-link');
 });
 
 $('span.button').on('click', function(){
-    $('span.button').removeClass('is-info');
-    $(this).addClass('is-info');
+    $('span.button').removeClass('is-link');
+    $(this).addClass('is-link');
 });
 
 // Calc
@@ -18,7 +18,7 @@ $('input').on('input', function() {
       avg   = $('#avg').val(),
       score = $('#score').val();
 
-  switch ($('span.is-info').text()) {
+  switch ($('span.is-link').text()) {
   case '標準偏差':
     $('#sd').val( Math.round( (score-avg) * 100 / (ss-50) ) / 10 );
   break;
