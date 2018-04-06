@@ -50,20 +50,20 @@ $('input').on('input', function() {
   }
   if ($('#sd').prop('disabled') && score!==0 && avg!==0 && ss!==0 ) {
     if (score === avg) {
-      $('.message').addClass('hidden');
+      $('#msg-default, #err-same, #err-large, #err-small').addClass('hidden');
       $('#err-same').removeClass('hidden');
     } else if (score < avg && ss > 50) {
-      $('.message').addClass('hidden');
+      $('#msg-default, #err-same, #err-large, #err-small').addClass('hidden');
       $('#err-large').removeClass('hidden');
     } else if (score > avg && ss < 50) {
-      $('.message').addClass('hidden');
+      $('#msg-default, #err-same, #err-large, #err-small').addClass('hidden');
       $('#err-small').removeClass('hidden');
     } else {
-      $('.message').addClass('hidden');
+      $('#msg-default, #err-same, #err-large, #err-small').addClass('hidden');
       $('#msg-default').removeClass('hidden');
     }
   } else {
-    $('.message').addClass('hidden');
+    $('#msg-default, #err-same, #err-large, #err-small').addClass('hidden');
     $('#msg-default').removeClass('hidden');
   }
 });

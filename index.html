@@ -24,7 +24,7 @@
 <nav class="navbar is-link is-fixed-top">
   <div class="container">
     <div class="navbar-brand">
-        <h1 class="navbar-item is-large title">SSCalc</h1>
+        <h1 class="navbar-item is-large title">SSCalc - 偏差値計算</h1>
     </div>
     <div id="nav" class="navbar-start"> <!-- Header --> </div>
 </nav>
@@ -72,6 +72,38 @@
       <label class="label is-large">標準偏差</label>
       <div class="control"><input id="sd" class="input is-large" type="number" disabled></div>
     </div>
+
+    <article class="message is-dark" style="margin-top: 3rem">
+      <div class="message-body content">
+        <h3><b>使い方</b></h3>
+        <h4>自分の受けた模試やテストで、○点のときの偏差値が知りたい</h4>
+        <ol>
+          <li>「標準偏差」を選択する
+          <li>点数、平均点、偏差値を入力する
+          <li>「偏差値」を選択する
+          <li>知りたい点数を入力する
+        </ol>
+        <h4>自分の受けた模試やテストで、偏差値を○にするためには何点必要か知りたい</h4>
+        <ol>
+          <li>「標準偏差」を選択する
+          <li>点数、平均点、偏差値を入力する
+          <li>「点数」を選択する
+          <li>知りたい偏差値を入力する
+        </ol>
+        <h3><b>FAQ</b></h3>
+        <h4>偏差値とは？</h4>
+        <p>平均を50としたときに、平均からどれくらい離れているかを数値化したものです。
+        <p>偏差値 = (点数-平均点) ÷ 標準偏差 × 10 + 50
+        <h4>標準偏差とは？</h4>
+        <p>点数がどれくらい散らばっているかを数値化したものです。
+        <p>(標準偏差)<sup>2</sup> = (点数-平均点)<sup>2</sup> の合計 ÷ 人数
+        <p>この (標準偏差)<sup>2</sup> を「分散」ともいいます。
+        <h4>偏差値がマイナスになったり100を超えたりすることはあるのか？</h4>
+        <p>平均点と点数の差が大きく、標準偏差が小さいときになることがあります。
+        <p style="margin-top: 50px">* 模試によって算出方法が異なる場合があるため、参考程度にしてください。
+        <p>* ローカル(ご使用の端末)で計算するため、サーバーにデータは<strong>送信されません</strong>。
+      </div>
+    </article>
 
   </div>
 </section>
