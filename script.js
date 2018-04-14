@@ -1,7 +1,5 @@
 $(function() {
 
-$('#nav').load('../nav.html?201804062022')
-
 // Button
 $('span.button').on('click', function(){
   $('span.button').removeClass('is-link');
