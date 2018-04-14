@@ -59,3 +59,7 @@ body{
     margin: -0.75px auto 0 auto;
   }
 }
+
+blockquote {
+  font-size: 1.2rem;
+}
