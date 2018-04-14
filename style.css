@@ -6,6 +6,10 @@
   margin-bottom: 2.5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Fix buttons */
 @media screen and (min-width: 769px) {
   .columns {
@@ -15,7 +19,7 @@
 }
 @media screen and (max-width: 768px) {
   .button.is-large {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
   }
   .buttons{
     width: 345px;
